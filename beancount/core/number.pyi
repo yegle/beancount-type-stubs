@@ -5,10 +5,10 @@
 from typing import Any, Optional, Union
 from decimal import Decimal
 
-def is_fast_decimal(decimal_module): ...
+def is_fast_decimal(decimal_module: Any) -> bool: ...
 
 decimal = ...  # type: Any
-Decimal = ...  # type: Any
+Decimal = ...  # type: Callable[[Any], Decimal]
 ZERO = ...  # type: Decimal
 HALF = ...  # type: Decimal
 ONE = ...  # type: Decimal
